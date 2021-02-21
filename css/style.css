@@ -1,0 +1,469 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* já que a maioria será Georgia = add no estilo geral do site */
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+img {
+    display: block; /* vai retirar qualquer margem que ela possua */
+    max-width: 100%;/* para a imagem ficar fluida */    
+}
+
+.btn {
+    border: 3px solid #FEC63E;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #FEC63E;
+    padding: 10px 30px;
+}
+
+.btn:hover {
+    color: #fff;
+    border-color: #Fff;
+}
+
+.btn-preto:hover {
+    color: #000;
+    border-color: #000;
+}
+
+.subtitulo {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: .1em;
+}
+
+.subtitulo:after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    display: block;
+    background: #000;
+    margin: 8px auto;
+}
+
+.subtitulo-interno {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.subtitulo-interno:after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    display: block;
+    background: #000;
+    margin: 8px 0 20px 0;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0; /* propriedade que vem com position */
+    padding: 15px 0;
+    background: #FEC63E;
+    z-index: 10;
+}
+
+.header-menu {
+    text-align: right;
+}
+
+.header-menu ul li {
+    display: inline-block;
+    margin-left: 25px; /* para não quebrar o container p/ direita */
+    margin-top: 20px;
+}
+
+.header-menu ul li a {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    line-height: 1.4;
+    padding: 10px 0; /* para facilitar a experiência no mobile: > área de contato */
+}
+
+.header-menu ul li a:hover {
+    color: white;
+}
+
+.header .menu-ativo {
+    color: #fff;
+}
+
+.introducao {
+    width: 100%;
+    height: 380px;
+    background: url("../images/bgbkcft-bg.jpg") no-repeat center;
+    margin-top: 92px;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.introducao-interna {
+    width: 100%;
+    height: 160px;
+    margin-top: 92px;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+.container h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.introducao-interna h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.introducao-interna h1:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 7px auto 10px auto;
+}
+
+.introducao-interna p {
+    text-align: center;
+    text-transform: lowercase;
+    color: #Fff;
+}
+
+.quote-externo {
+    max-width: 270px;
+    /* como colocou width, para alinhar ao centro necessita de margin */
+    margin: 0 auto;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.quote-externo p {
+    font-style: italic;
+}
+
+/* para os separadores do quote usa-se pseudoclasses */
+.quote-externo p:before, .quote-externo p:after {
+    /* não faz parte do html mas add elemento html ao site; por ser conteúdo de estilo: não pode ser selecionado no site*/
+    content: ""; /* mesmo vazio, necessário ter o content */
+    display: block; /* pois as pseudoclasses, por padrão, criam elemento inline */
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 15px auto 10px auto;
+}
+
+.quote-externo cite {
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+
+.produtos {
+    padding: 60px 0;
+}
+
+.produtos-lista li {
+    text-align: center;
+    background: #FEC63E
+}
+
+.produtos-lista li img {
+    margin: 0 auto;
+}
+
+.produtos-lista li h3 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.produtos-lista li h3:after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    display: block;
+    background: #000;
+    margin: 3px auto;
+}
+
+.produtos-lista li p {
+    padding: 10px 20px 20px 20px;
+}
+
+.produtos-icone {
+    background: black;
+    padding: 20px;
+}
+
+.call-to-action {
+    clear: both; /* já que os produtos tinham float, acabou ficando por cima, e o padding n funcionava */
+    padding-top: 40px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.call-to-action p {
+    margin-bottom: 20px;
+}
+
+.portfolio {
+    width: 100%;
+    background: #000;
+    padding: 40px 0;
+}
+
+.portfolio .subtitulo {
+    color: #FEC63E;
+}
+
+.portfolio .subtitulo:after {
+    background: #FEC63E;
+}
+
+.portfolio-itens li:last-child {
+    margin-top: 20px;
+}
+
+.portfolio .call-to-action p{
+    color: #fff;
+}
+
+.qualidade {
+    padding: 60px 0;
+}
+
+/* para colocar as linhas, basta criat um after, para não pear o site com divs
+   e posicioná-las de acordo com a marca, como no wireframe 
+*/
+.qualidade:after {
+    content: "";
+    width: 604px;
+    height: 80px;
+    display: block;
+    background: url("../images/logo/linhas-qualidade.svg");
+    position: absolute;
+    top: 221px;
+    right: 178px;
+    z-index: -1;
+} 
+
+.qualidade img {
+    margin: 0 auto;
+}
+
+.qualidade-lista {
+    padding-top: 20px;
+    overflow: auto; /* clear-fix = limpa a flutuação */
+}
+
+.qualidade-lista li {
+    text-align: center;
+    padding: 0 40px;
+}
+
+.qualidade-lista li h3 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.qualidade-lista li h3:after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    display: block;
+    background: #000;
+    margin: 6px auto;
+}
+
+.quebra {
+    width: 100%;
+    height: 220px;
+    background: url("../images/bg-footer.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.quebra .quote-externo {
+    max-width: 400px;
+}
+
+.footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FEC63E;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.footer h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 6px 0 12px 0;
+    background: #FEC63E;
+}
+
+.footer-historia {
+    padding-right: 40px;
+}
+
+.footer-contato ul li {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer-redes ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.copy {
+    width: 100%;
+    background: #FEC63E;
+    padding: 20px 0;
+}
+
+/* JAVASCRIPT */
+
+/* IMPORTANTE: o .js vai verificar se existe js na página
+   se existir = funciona perfeitamente e se não, não vai quebrar o layout ou desaparecer o que foi envolvido
+*/
+
+/* [seleciona todos os atributos com o nome presente aq], exemplo [src] */
+.js [data-slide] {
+    position: relative;
+  }
+  
+  /* asteríscos = seleção geral */
+.js [data-slide] > * {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+}
+  
+.js [data-slide] > .active {
+    position: relative;
+    /* pode passar nenhum valor = transicionar tudo
+       ou passar um valor específico, como exemplo a opacidade */
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+/* PORTFÓLIO */
+.js [data-slide-nav] {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.js [data-slide-nav] > button {
+    display: inline-block;
+    width: 12px;
+    margin: 4px;
+    height: 12px;
+    border: none;
+    padding: 0px;
+    border-radius: 6px;
+    background: #1d1d1d;
+    text-indent: -100px; /* para remover os numeros*/
+    overflow: hidden; /* elimina tudo o que está fora*/
+}
+
+/* quando a classe estiver ativa = alterna a cor do botão */
+.js [data-slide-nav] > button.active {
+    background: #fec454;
+}
+
+/* ANIMAÇÃO */
+/* todo elemento que tiver data anime = opacidade 0 */
+
+
+/* todo elemento que possuir esse atributo =  */
+.js [data-anime] {
+    opacity: 0;
+}
+
+/* 3d ativa a parte gráfica do site e ele é mais rápido */
+.js .fadeInDown {
+    transform: translate3d(0, -20px, 0); /* não influencia nos outros elementos da tela */
+}
+
+/* quando a classe for reconhecida = */
+.js .anime {
+    opacity: 1;
+    transform: none;
+    transition: opacity 800ms, transform 800ms;
+} 
+
+/* campo para robôs */
+.nao-aparece {
+    visibility: hidden;
+    position: absolute;
+    height: 0px;
+}
+
+/* mensagem js */
+#form-sucesso {
+    color: #31aa39;
+
+}
+
+#form-sucesso h2, #form-erro h2 {
+    font-weight: bold;
+}
+
+#form-sucesso p, #form-erro p {
+    font-size: 14px;
+    color: #413f3f;
+}
+
+#form-erro {
+    color: #f64540;
+}

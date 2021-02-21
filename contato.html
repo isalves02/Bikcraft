@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikcraft - Contato</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js")</script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="grid-4">
+                <img src="/bikcraft/images/logo/bikcraft.svg" alt="Bikcraft">
+            </a>
+ 
+            <nav class="grid-12 header-menu">
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html" class="menu-ativo">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="introducao-interna interna-contato">
+        <div class="container">
+            <h1 data-anime="400" class="fadeInDown">Contato</h1>
+            <p data-anime="800" class="fadeInDown">Tire as suas dúvidas com a gente</p>
+        </div>
+    </section>
+
+    <section class="contato container" data-anime="1200">
+        <!-- action = o caminho do arquivo php -->
+            <form method="POST" action="./enviar.php" id="form-contato" class="form grid-8 formphp">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail</label>
+                <!-- type: email faz com que dê exemplo de @ -->
+                <input type="email" id="email" name="email" required>
+                <label for="telefone">Telefone</label>
+                <input type="number" id="telefone" name="telefone">
+
+                <!-- para impedir robôs -->
+                <label class="nao-aparece">Se você não é robô, deixe em branco.</label>
+                <input type="text" class="nao-aparece" name="leaveblank">
+                <label class="nao-aparece">Se você não é robô, não mude este campo.</label>
+                <input type="text" class="nao-aparece" name="dontchange" value="http://">
+                
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="msg" type="text" required></textarea>
+                <button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
+           </form>
+
+            <div class="dados-contato grid-8">
+                <h3>Dados</h3>
+                <span>+55 71 9900-0022</span> <!-- span = classe genérica de elemento inline-->
+                <span class="email-contato">contato@bikcraft.com</span>
+                <p>Rua Ali Perto - Botafogo<br>Rio de Janeiro - RJ - Brasil</p>
+                <h3>Redes sociais</h3>
+                <ul>
+                    <li><a href="http://facebook.com" target="_blank"><img src="../bikcraft/images/sociais/facebook.svg" alt="facebook"></a></li>
+                    <li><a href="http://instagram.com" target="_blank"><img src="../bikcraft/images/sociais/instagram.svg" alt="instagram"></a></li>
+                    <li><a href="http://twitter.com" target="_blank"><img src="../bikcraft/images/sociais/tt.svg" alt="twitter"></a></li>
+                </ul>
+            </div>
+    </section>
+
+    <section class="container contato-mapa">
+        <a href="http://google.com/maps" target="_blank" rel="noopener noreferrer" class="grid-16"><img src="../bikcraft/images/endereco.png" alt="Bikcraft - endereço">
+        </a>
+    </section>
+
+
+    <section class="quebra">
+        <blockquote class="quote-externo container">
+            <p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
+            <cite>William Morris</cite>
+        </blockquote>
+    </section> 
+
+    <footer>
+        <div class="footer">
+           <div class="container">
+               <div class="grid-8 footer-historia">
+                   <h3>Nossa história</h3>
+                   <p> O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.
+                       O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500.
+                   </p>
+               </div>
+ 
+               <div class="grid-4 footer-contato">
+                   <h3>Contato</h3>
+                   <ul>
+                       <li>- 24 9999-9999</li>
+                       <li>- contato@bikecraft.com</li>
+                       <li>- Salvador - BA</li>
+                   </ul>
+               </div>
+ 
+               <div class="grid-4 footer-redes">
+                   <h3>Redes sociais</h3>
+                   <ul>
+                       <li><a href="http://facebook.com" target="_blank"><img src="../bikcraft/images/sociais/facebook.svg" alt="facebook"></a></li>
+                       <li><a href="http://instagram.com" target="_blank"><img src="../bikcraft/images/sociais/instagram.svg" alt="instagram"></a></li>
+                       <li><a href="http://twitter.com" target="_blank"><img src="../bikcraft/images/sociais/tt.svg" alt="twitter"></a></li>
+                   </ul>
+               </div>
+           </div>
+        </div>
+        
+        <div class="copy">
+         <div class="container">
+           <p class="grid-16">Bikcraft 2021 - Alguns direitos reservados.</p>
+         </div>  
+     </div>
+    </footer>
+    
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/simple-form.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
