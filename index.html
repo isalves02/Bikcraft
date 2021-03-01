@@ -2,11 +2,12 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- facilita o responsivo: tela do tamanho do dispositivo = vh -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Compre a sua biclicleta personalizada na Bikcraft. 
-    Possuimos modelos Passeio, Retrô e Esportes">
+    Possuimos modelos Passeio, Retrô e Esportes"> <!--Até 140 caracteres-->
     <meta name="keywords" content="Biclicletas Pesonalizadas">
+    <!-- facilita o compartilhamento -->
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Bikcraft - Bicicletas Personalizadas"/>
     <meta property="og:description" content="Compre a sua biclicleta personalizada na Bikcraft. 
@@ -14,10 +15,14 @@
     <meta property="og:url" content="http://bikcraft.com"/>
     <meta property="og:img" content="http://bikcraft.com/images/logo/og-img.png"/>
 
-    <title>Bikcraft - Bicicletas Personalizadas</title>
+    <title>Bikcraft - Bicicletas Personalizadas</title> <!---Até 70 caracteres-->
 
     <link rel="shortcut icon" href="./images/logo/favicon.ico" type="image/x-icon">
-    
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- há browsers que não possuem js habilitado, sendo assim, para habilitar na head -->
+    <!-- document = todo html + documentElement = elementos do html + classList = todas as listas + add = adiciona classe nova -->
     <script>document.documentElement.classList.add("js")</script>
 </head>
 
@@ -25,7 +30,7 @@
    <header class="header">
        <div class="container">
            <a href="index.html" class="grid-4">
-             <img src="./images/logo/bikcraft.svg" alt="Bikcraft">
+               <img src="./images/logo/bikcraft.svg" alt="Bikcraft">
            </a>
 
            <nav class="grid-12 header-menu">
@@ -141,12 +146,12 @@
        </div>
    </section>
 
-   <section class="quebra">
+   <div class="quebra">
     <blockquote class="quote-externo container">
         <p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
         <cite>William Morris</cite>
     </blockquote>
-   </section>
+   </div>
 
    <footer>
        <div class="footer">
