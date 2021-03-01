@@ -412,7 +412,7 @@ img {
 .introducao {
     width: 100%;
     height: 380px;
-    background: url("../images/bgbkcft-bg.jpg") no-repeat center;
+    background: url("./images/bgbkcft-bg.jpg") no-repeat center;
     margin-top: 92px;
     color: white;
     text-align: center;
@@ -572,7 +572,7 @@ img {
     width: 604px;
     height: 80px;
     display: block;
-    background: url("../images/logo/linhas-qualidade.svg");
+    background: url("./images/logo/linhas-qualidade.svg");
     position: absolute;
     top: 221px;
     right: 178px;
@@ -614,7 +614,7 @@ img {
 .quebra {
     width: 100%;
     height: 220px;
-    background: url("../images/bg-footer.jpg") no-repeat center;
+    background: url("./images/bg-footer.jpg") no-repeat center;
     background-size: cover;
     text-align: center;
     padding-top: 40px;
@@ -772,7 +772,7 @@ img {
 
 /* style sobre */
 .interna-sobre {
-    background: url("../images/bg-sobre.jpg") center no-repeat;
+    background: url("./images/bg-sobre.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -800,7 +800,7 @@ img {
 
 /* style produtos */
 .interna-produtos {
-    background: url("../images/bg-produtos.jpg") no-repeat center;
+    background: url("./images/bg-produtos.jpg") no-repeat center;
     background-size: cover; /* sempre abaixo do bg */
 }
 
@@ -983,7 +983,7 @@ ODD FALA COM TODOS N°S ÍMPARES - EVEN FLA COM TODOS OS PARES */
 
 /* style portfolio */
 .interna-portfolio {
-    background: url("../images/bg-portfolio.jpg") center no-repeat;
+    background: url("./images/bg-portfolio.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -1012,7 +1012,7 @@ ODD FALA COM TODOS N°S ÍMPARES - EVEN FLA COM TODOS OS PARES */
 
 /* style contato */
 .interna-contato {
-    background: url("../images/bg-contato.jpg") center no-repeat;
+    background: url("./images/bg-contato.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -1028,6 +1028,7 @@ ODD FALA COM TODOS N°S ÍMPARES - EVEN FLA COM TODOS OS PARES */
 #form-contato label {
     display: block;
     font-size: 18px;
+    color: #000;
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 25px;
     margin-bottom: 4px;
